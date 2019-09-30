@@ -46,17 +46,12 @@
 
         <fieldset class="mt-4">
           <label for="stories">Enter number of stories:</label>
-          <input id="stories" type="number" minlength="2" maxlength="40" value="">
+          <input id="stories" type="number" minlength="1" maxlength="100" value="5">
         </fieldset>
 
         <fieldset class="mt-4">
-          <label for="string2">Enter second string:</label>
-          <input id="string2" type="text" minlength="2" maxlength="40" value="nacho">
-        </fieldset>
-
-        <fieldset class="mt-4">
-          <label for="string3">Enter third string:</label>
-          <input id="string3" type="text" minlength="2" maxlength="40" value="library">
+          <label for="sketches">Enter number of sketches:</label>
+          <input id="sketches" type="number" minlength="1" maxlength="100" value="10">
         </fieldset>
 
       </div>
@@ -64,9 +59,9 @@
 
       <!--column 2 (5/12) -->
       <div class="col-md-5 mb-4">
-        <h2>Find the shortest string:</h2>
+        <h2>Calculate total number of sketches:</h2>
         <hr>
-        <button id="findShortString" class="btn btn-primary">Calculate</button>
+        <button id="totalSketches" class="btn btn-primary">Calculate</button>
         <hr>
         <p id="result"></p>
 
