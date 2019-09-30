@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sketch Count Estimater</title>
+
+  <meta name="description" content="App Challenge 1">
+  <meta name="author" content="Justin Folkerts">
+
+  <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+
+  <!-- required for sticky footer -->
+  <style>
+    body,
+    .sticky-footer-wrapper {
+      min-height: 100vh;
+    }
+  </style>
+
+</head>
+
+<body class="d-flex flex-column sticky-footer-wrapper">
+  <!-- Bootstrap container or container-fluid (whole width) -->
+  <!-- https://getbootstrap.com/docs/4.0/layout/overview/ -->
+  <!-- margin top 5 ($spacer * 3) -->
+  <main class="container mt-5 flex-fill">
+
+    <!--Container has rows - first row -->
+    <div class="row">
+
+      <!--Rows have columns - column 1 (7/12) -->
+      <div class="col-md-7 mb-4">
+
+        <h2>Sketch Count Estimater</h2>
+        <hr>
+
+        <fieldset class="mt-4">
+          <label for="stories">Enter number of stories:</label>
+          <input id="stories" type="number" minlength="2" maxlength="40" value="">
+        </fieldset>
+
+        <fieldset class="mt-4">
+          <label for="string2">Enter second string:</label>
+          <input id="string2" type="text" minlength="2" maxlength="40" value="nacho">
+        </fieldset>
+
+        <fieldset class="mt-4">
+          <label for="string3">Enter third string:</label>
+          <input id="string3" type="text" minlength="2" maxlength="40" value="library">
+        </fieldset>
+
+      </div>
+      <!--end column 1-->
+
+      <!--column 2 (5/12) -->
+      <div class="col-md-5 mb-4">
+        <h2>Find the shortest string:</h2>
+        <hr>
+        <button id="findShortString" class="btn btn-primary">Calculate</button>
+        <hr>
+        <p id="result"></p>
+
+      </div>
+      <!-- end column 2-->
+
+    </div>
+    <!-- end row 1 -->
+
+  </main>
+
+  <footer>&copy; Justin Folkerts</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
